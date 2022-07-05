@@ -1,6 +1,4 @@
-window.addEventListener("DOMContentLoaded", (event) => {
-  console.log("ページが完全に読み込まれました");
-  particlesJS("particles-js", {
+particlesJS("particles-js", {
     particles: {
       number: {
         value: 597,
@@ -63,4 +61,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     },
     retina_detect: true,
   });
-});
