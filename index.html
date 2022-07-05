@@ -1,13 +1,292 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>にこちまるポートフォリオ</title>
-</head>
-<body>
-  <h1>にこちまるポートフォリオ</h1>
-  <p>aaa</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikochimaru Portfolio</title>
+    <meta name="description" content="Web制作ポートフォリオ" />
+    <link rel="icon" href="/images/じぇい.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/sanitize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header class="header">
+        <div class="scrolldown"><span>Scroll</span></div>
+        <div id="particles-js"></div>
+        <div class="site-title"></div>
+        <canvas id="particle"></canvas>
+
+        <div class="mobile-menu">
+          <ul class="mobile-menu__nav">
+            <li class="mobile-menu__li">
+              <a href=""
+                >About me<span>私について</span
+                ><img src="/images/Icon ionic-ios-contact.svg" alt=""
+              /></a>
+            </li>
+            <li class="mobile-menu__li">
+              <a href=""
+                >Service<span>できること</span>
+                <img src="/images/Icon awesome-laptop-code.svg" alt=""
+              /></a>
+            </li>
+            <li class="mobile-menu__li">
+              <a href="">
+                Messages<span>お客様へ</span
+                ><img src="/images/Icon feather-message-square.svg" alt=""
+              /></a>
+            </li>
+            <li class="mobile-menu__li">
+              <a href=""
+                >Works<span>制作実績</span>
+                <img src="/images/Icon awesome-desktop.svg" alt=""
+              /></a>
+            </li>
+            <li class="mobile-menu__li">
+              <a href="">
+                Contact<span>お問合せ</span
+                ><img src="/images/Icon ionic-ios-contact.svg" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="mobile-menu__btn">
+          <div class="btn-wrap">
+            <div class="waku">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+
+        <div id="mask"></div>
+      </header>
+      <main>
+        <div class="about content-width">
+          <div class="main-title">About me</div>
+          <div class="sub-title">私について</div>
+          <div class="wrap">
+            <div class="img-wrap">
+              <img src="/images/じぇい.png" alt="" />
+            </div>
+            <div class="about__name mrgin-left">
+              <h3>nikochimaru</h3>
+              <div class="about__text mrgin-left">
+                東京都出身のWebエンジニア。 <br />
+                大学では文系で公務員を目指してたまたま受かった警察官へ就職。
+                <br />
+                2018年に退職。 <br />
+                現在はWeb制作に興味があり、会社に勤めながらフロントエンド開発をメインに活動中です。
+                <br />
+                開発言語はHTML/CSS(SCSS),Javascript,WordPressです。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service content-width">
+          <div class="main-title">Service</div>
+          <div class="sub-title">できること</div>
+
+          <div class="grid">
+            <div class="service-wrap">
+              <div class="img-wrap">
+                <img src="/images/3.png" alt="" />
+              </div>
+              <div class="service__text">
+                ご用意していただいたデザインを元に、保守性の高いコーディングをいたします。<br />
+                デザインカンプに正確かつ忠実なコーディングを行います。<br />
+                レスポンシブ対応も可能です。
+              </div>
+            </div>
+
+            <div class="service-wrap">
+              <div class="img-wrap">
+                <img src="/images/2.png" alt="" />
+              </div>
+              <div class="service__text">
+                ハンバーガーメニュー・最上部へ戻るボタンなど、<br />デザインとユーザーの利便性を両立するアニメーションを実装いたします。
+              </div>
+            </div>
+
+            <div class="service-wrap">
+              <div class="img-wrap">
+                <img src="/images/1.png" alt="" />
+              </div>
+              <div class="service__text">
+                WordPressを使用した独自のサイトの構築が可能です。<br />
+                ご予算に合わせて柔軟に対応可能です。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="Messages content-width">
+          <div class="main-title">Messages</div>
+          <div class="sub-title">お客様へ</div>
+          <div class="Messages-grid">
+            <div class="mobile-img">
+              <img src="/images/グループ 1.png" alt="" />
+            </div>
+            <div class="mobile-img">
+              <img src="/images/グループ 2.png" alt="" />
+            </div>
+            <div class="mobile-img">
+              <img src="/images/グループ 3.png" alt="" />
+            </div>
+
+            <div class="pc-img">
+              <div class="item">
+                <div class="item-img left">
+                  <img src="/images/企業.png" alt="" />
+                </div>
+                <div class="text">
+                  <div class="title">Web制作会社様へ</div>
+                  コーダー不足にお悩みの際はぜひ私にご相談ください。
+                  HTMLのコーディングからWordPressによるCMS化まで対応可能です。
+                  迅速かつ丁寧な対応で煩雑なコーディング業務をサポートいたします！
+                </div>
+              </div>
+
+              <div class="item rev">
+                <div class="item-img right">
+                  <img src="/images/フリーランス.png" alt="" />
+                </div>
+                <div class="text">
+                  <div class="title">フリーランス様へ</div>
+                  個人でご活躍されているフリーランス様、リソース不足でお悩みではりませんか。
+                  面倒なコーディング作業だけでも外注してみませんか？
+                  あなたの手足となって効率的な制作をお手伝いいたします！
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="item-img left">
+                  <img src="/images/デザイナー.png" alt="" />
+                </div>
+                <div class="text">
+                  <div class="title">デザイナー様へ</div>
+                  あなたの素晴らしいデザインを実現するコーダーをお探しではありませんか。
+                  私も手広くお仕事をするためにデザイナーの方を探しております。
+                  是非私とパートナーシップを結んで活躍の機会を広めましょう。
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="works content-width">
+          <div class="main-title">Works</div>
+          <div class="sub-title">制作実績</div>
+          <ul class="grid">
+            <li class="works__item">
+              <img src="/images/グループ 4.png" alt="" />
+            </li>
+            <li class="works__item">
+              <img src="/images/グループ 4.png" alt="" />
+            </li>
+            <li class="works__item">
+              <img src="/images/グループ 4.png" alt="" />
+            </li>
+          </ul>
+          <button class="btn">もっと見る</button>
+        </div>
+
+        <div class="contact content-width">
+          <div class="box_con02">
+            <div class="main-title">Contact</div>
+            <div class="sub-title">お問合せ</div>
+            <form method="post" action="mail.php">
+              <table class="formTable">
+                <tr>
+                  <th>確認</th>
+                  <td>
+                    <div class="box_br">
+                      <label>
+                        <input type="radio" name="gender" value="テキスト1" />
+                        テキスト1
+                      </label>
+                    </div>
+                    <div class="box_br">
+                      <label>
+                        <input type="radio" name="gender" value="テキスト2" />
+                        テキスト2
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>ご用件</th>
+                  <td>
+                    <select name="ご用件">
+                      <option value="">選択してください</option>
+                      <option value="ご質問・お問い合わせ">
+                        ご質問・お問い合わせ
+                      </option>
+                      <option value="リンクについて">リンクについて</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th>お名前<span>必須</span></th>
+                  <td>
+                    <input size="20" type="text" class="wide" name="お名前" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>電話番号（半角）<span>必須</span></th>
+                  <td>
+                    <input size="30" type="text" class="wide" name="電話番号" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mail（半角）</th>
+                  <td>
+                    <input size="30" type="text" class="wide" name="Email" />
+                  </td>
+                </tr>
+                <tr>
+                  <th>お問い合わせ内容<br /></th>
+                  <td>
+                    <textarea
+                      name="お問い合わせ内容"
+                      cols="50"
+                      rows="5"
+                    ></textarea>
+                  </td>
+                </tr>
+              </table>
+
+              <p class="btn">
+                <span><input type="submit" value="　 確認 　" /></span>
+              </p>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        &copy;nikochimaru 2022
+        <p id="page-top"><a href="#"></a></p>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/scripts/star.js"></script>
+    <script src="/scripts/particleText.js"></script>
+    <script src="/scripts/huwa.js"></script>
+    <script src="/scripts/main.js"></script>
+  </body>
 </html>

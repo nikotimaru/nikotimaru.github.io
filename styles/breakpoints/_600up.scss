@@ -1,0 +1,70 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.mrgin-right {
+  margin-right: 5%;
+}
+.mrgin-left {
+  margin-left: 5%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px !important;
+
+  .img-wrap {
+    max-width: 100%;
+  }
+}
+
+.grid {
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5%;
+}
+
+.Messages-grid {
+  .mobile-img {
+    display: none;
+  }
+  .pc-img{
+    display: block;
+
+    
+    .item{
+      margin-top: 4%;
+      display: flex;
+      align-items: center;
+      gap: 5%;
+
+      &-img{
+        flex-basis: 200%;
+      }
+      
+      .text{
+        .title{
+          font-size: 23px;
+          margin-bottom: 4%;
+        }
+      }
+    
+    }
+    .rev{
+      flex-direction: row-reverse;
+    }
+
+  }
+}
+
+.mobile-menu__nav {
+  padding-top: 20%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 15%);
+  row-gap: 1ch;
+}
