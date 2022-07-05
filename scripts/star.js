@@ -1,4 +1,4 @@
-window.addEventListener("load", (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
   console.log("ページが完全に読み込まれました");
   particlesJS("particles-js", {
     particles: {
